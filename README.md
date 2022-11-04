@@ -1,8 +1,7 @@
 # A Flexible Button component
 
-The MysteryComponent.tsx is a flexible button component which renders a HTML button element and can accept a click callback and numerous styling props. It can wrap around text or any other components supplied as children. 
-e.g. 
-`<MysteryComponent>Click Me!</MysteryComponent>`
+The MysteryComponent.tsx is a flexible button component which renders a HTML button element and can accept a click callback and numerous styling props. It can wrap around text or any other components supplied as children.
+E.g.  `<MysteryComponent>Click Me!</MysteryComponent>`
 
 Defined props:
 - styleType: "primary" | "secondary"
