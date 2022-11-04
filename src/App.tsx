@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { connect } from "react-redux";
+import { useAppDispatch } from "./hooks";
 
-function App() {
+import MysteryComponent from "./components/Mystery/MysteryComponent";
+import MysteryCounter from "./components/Mystery/MysteryCounter";
+import { mysteryClick } from "./redux/mysterySlice";
+const App = (): JSX.Element => {
+  const dispatch = useAppDispatch();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <MysteryCounter />
+      <MysteryComponent
+        onClick={() => dispatch(mysteryClick())}
+        styleType="primary"
+        size="large"
+      >
+        Mystery
+      </MysteryComponent>
     </div>
   );
-}
+};
 
-export default App;
+export default connect()(App);
