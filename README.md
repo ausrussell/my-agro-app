@@ -5,12 +5,12 @@ e.g.
 `<MysteryComponent>Click Me!</MysteryComponent>`
 
 Defined props:
-  styleType: "primary" | "secondary"
-  icon: element or string
-    - iconPos: "left" or "right"
-  size: "small" | "large" | "icon"
-  className: string
-  disable: boolean
+- styleType: "primary" | "secondary"
+- icon: element or string
+- iconPos: "left" or "right"
+-size: "small" | "large" | "icon"
+- className: string
+- disable: boolean
 
 This App shows an example use of it.
 The App.tsx file uses it as button with a callback to store in redux the number of times it is clicked.
